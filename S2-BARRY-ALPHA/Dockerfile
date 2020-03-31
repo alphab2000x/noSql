@@ -13,6 +13,5 @@ RUN apt-get -y install python3 \
 && git config --global user.email barrys.alpha@gmail.com \
 && git clone https://github.com/alphab2000x/noSql.git
 
+EXPOSE 5000
 CMD [ "python3", "./simple_api_0.py" ]
-
-EXPOSE 8000
