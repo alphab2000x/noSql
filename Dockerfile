@@ -10,6 +10,7 @@ RUN apt-get -y install python3 \
 && apt-get install -y vim
 RUN pip3 freeze > requirements.txt \
 && pip3 install -r requirements.txt \
+&& pip3 install jupyterlab \
 && git config --global user.name barry \
 && git config --global user.email barrys.alpha@gmail.com \
 && git clone https://github.com/alphab2000x/noSql.git
