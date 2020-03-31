@@ -1,4 +1,8 @@
 #!/bin/bash
 
 echo "ping: "
-wget ping 127.0.0.1
+ping 127.0.0.1 -c 4
+
+echo "curl: "
+wget curl 127.0.0.1
+echo ""
